@@ -359,7 +359,7 @@ footer {
     gap: 64px;
   }
   .landing__base .header__container {
-    max-height: 1144px;
+    max-height: 710px;
   }
   .landing__base .header__container-row {
     padding-top: 71px;
@@ -398,8 +398,53 @@ footer {
   }
 }
 @media (max-width: 480px) {
-  header .container {
-    padding: 0 100px;
+  .landing__base .header__wrapper {
+    display: none;
+  }
+  .landing__base header .container {
+    padding: 0 10px !important;
+  }
+  .landing__base .header__container {
+    background-color: #ffffff;
+    max-height: 100%;
+  }
+  .landing__base .header__container-row {
+    flex-direction: column;
+    padding: 90px 3px !important;
+  }
+  .landing__base .header__container .container {
+    padding: 0 25px !important;
+    height: 100%;
+  }
+  .landing__base .header__container-left {
+    order: 2;
+    width: 100%;
+  }
+  .landing__base .header__container-title {
+    width: 100%;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .landing__base .header__container-title h1 {
+    margin-top: 30px;
+    font-size: 31px;
+  }
+  .landing__base .header__container-title article {
+    font-size: 15px;
+  }
+  .landing__base .header__container-title .button {
+    margin-top: 10px !important;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+  .landing__base .header__container-right {
+    width: 100%;
+  }
+  .landing__base .header__container-right img {
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 193px;
   }
 }
 .tarifs__header .container {
