@@ -14,14 +14,14 @@
     <div class="landing__base">
     {% include 'navigation.html'%}
     {% block header %}{% endblock header %}
-    {% include 'footer.html'%}
     </div>
+
     {% block profile %}{% endblock profile %}
     {% block game %}{% endblock game %}
     {% block tarifs %}{% endblock tarifs %}
     {% block content %}{% endblock content %}
     {% block practice %}{% endblock practice %}
-
+    {% include 'footer.html'%}
     </div>
 </body>
 <script src="{% static 'js/modal.js' %}"></script>
