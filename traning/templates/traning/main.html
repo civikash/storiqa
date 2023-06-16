@@ -1,0 +1,171 @@
+{% extends 'app.html' %}
+{% load static %}
+{% block practice %}
+<div class="traning__header">
+    <div class="container">
+        <div class="traning__header-selected green-bg row">
+            <div class="tranin-header-left">
+            <h1>Обучение чтению детей</h1>
+            <div class="traning__header-row">
+                <div class="traning__header-column">
+                    <article>Всего 15 минут занятий в день в течении 3-х месяцев
+                        и ваш ребенок начнет читать</article>
+                        <form method="POST">
+                            {% csrf_token %}
+                    <div class="traning__header-row">
+                        <select class="blue" name="age" id="ageSelect" required>
+                            <option>Выберите возраст</option>
+                            {% for age in game_age %}
+                            <option value="{{ age.id }}">{{ age.age_name }}</option>
+                            {% endfor %}
+                        </select>
+                        <select class="orange" name="game" id="gameSelect" required>
+                            <option value="1">Чтение для детей</option>
+                            <option value="2">Звуки для детей</option>
+                        </select>
+
+                    </div>
+                    <button class="button green" type="submit">Начать</button>
+                </form>
+                </div>
+            </div>
+            </div>
+            <img class="memo__book" src="{% static 'img/duck_book.svg' %}" alt="">
+        </div>
+        <div class="traning__header-selected blue alph-bg">
+            <div class="traning__header-title">
+            <h1>Алфавит для детей</h1>
+            <a href="{% url 'traning:alphabet' %}">Посмотреть все</a>
+        </div>
+            <div class="traning__header-alph">
+                <div class="alph__element">
+                    <div class="alph__element-letter blue">
+                        <h1>A</h1>
+                        <img src="{% static 'img/a.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква А</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter green">
+                        <h1>Б</h1>
+                        <img src="{% static 'img/b.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква Б</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter orange-3">
+                        <h1>В</h1>
+                        <img src="{% static 'img/v.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква В</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter blue-2">
+                        <h1>Г</h1>
+                        <img src="{% static 'img/g.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква Г</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter red">
+                        <h1>Д</h1>
+                        <img src="{% static 'img/d.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква Д</span>
+                    </div>
+                </div>
+                <a href="{% url 'traning:alphabet' %}" class="alph__element">
+                    <div class="alph__element-letter green more">
+                        <h1>Посмотреть<br>
+                            все<br>
+                            задания</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="traning__header-selected orange voices-bg">
+            <div class="traning__header-title">
+            <h1>Звуки для детей</h1>
+            <a href="{% url 'traning:sounds' %}">Посмотреть все</a>
+        </div>
+            <div class="traning__header-alph">
+                <div class="alph__element voices">
+                    <div class="alph__element-letter orange">
+                        <img src="{% static 'img/voices/letter_1.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Изучаем<br> гласные буквы</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter blue">
+                        <img src="{% static 'img/voices/letter_2.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Различаем гласные
+                            и согласные звуки</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter green-light">
+                        <img src="{% static 'img/voices/letter_3.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Твердые и мягкие 
+                            согласные звуки</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter purple">
+                        <img src="{% static 'img/voices/letter_4.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Различаем буквы</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter green">
+                        <img src="{% static 'img/voices/letter_5.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буквенные пазлы</span>
+                    </div>
+                </div>
+                <a href="{% url 'traning:sounds' %}" class="alph__element voices">
+                    <div class="alph__element-letter orange more__orange">
+                        <h1>Посмотреть<br>
+                            все<br>
+                            задания</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="traning__header-selected blue-2 quest-bg">
+            <div class="traning-header-left">
+            <h1>Как научить ребенка читать?</h1>
+            <div class="traning__header-row information">
+                <div class="training__header-column">
+                    <article>Чтение - это один из самых важных навыков, которые человек может 
+                        освоить в жизни. Оно дает нам возможность учиться, общаться, 
+                        познавать мир и наслаждаться книгами. Но чтобы научиться читать, нужно потратить время и усилия на тренировку. 
+                    </article>
+                    <article>
+                        Эти навыки пригодятся во многих сферах жизни, начиная от учебы и 
+                        заканчивая работой.<br> Именно поэтому так важно научить детей читать с раннего возраста и помочь им развивать этот навык на протяжении всей жизни.</article>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'img/duck_2.svg' %}" alt="">
+        </div>
+    </div>
+</div>
+    {% endblock practice %}

@@ -1,0 +1,186 @@
+.tarifs__header {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        min-height: 200px;
+
+        h1 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+    }
+
+    &-banner {
+        display: flex;
+        width: 75%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        padding: 5px;
+        align-items: flex-start;
+        border-radius: 16px;
+        background-color: $blue-2;
+
+        img {
+            width: 220px;
+            position: absolute;
+            left: -27px;
+            bottom: -17px;
+        }
+
+    }
+    .banner__column {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+
+        h1 {
+            color: $white;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        span {
+            color: $red;
+            font-size: 75px;
+            letter-spacing: -0.035em;
+            transform: rotate(-0.22deg);
+            -webkit-text-stroke: 1px $white;
+        }
+    }
+}
+
+
+.tarifs__body {
+    margin-top: 85px;
+    .border {
+        display: flex;
+        width: 75%;
+        padding: 15px;
+        border-radius: 15px;
+        border: 3px solid $dark;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+    }
+
+    &-row {
+        display: flex;
+        width: 70%;
+        justify-content: space-evenly;
+    }
+
+    &-space {
+        display: flex;
+        max-width: 50%;
+        align-items: center;
+        flex-direction: column;
+
+        .button {
+            background-color: $green-2;
+            color: $white;
+            margin-top: 25px;
+            font-size: 22px;
+            width: 70%;
+        }
+
+        .tarif__element {
+            border-radius: 15px;
+            background-color: $orange-trafic;
+            max-width: 70%;
+            border-right: 2px solid $orange-trafic-header;
+            border-left: 2px solid $orange-trafic-header;
+            border-bottom: 2px solid $orange-trafic-header;
+
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                min-height: 95px;
+                border: 2px solid $orange-trafic-border;
+                background-color: $orange-trafic-header;
+                
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 250px;
+                padding: 15px;
+                justify-content: space-evenly;
+
+                span {
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+
+                span:nth-child(2) {
+                    color: $white;
+                    font-size: 23px;
+                }
+
+                h1 {
+                    font-size: 35px;
+                    font-weight: 500;
+                    color: $blue-tarif;
+                }
+            }
+        }
+    }
+
+    &-space:nth-child(2) {
+        scale: 121%;
+        width: 50%;
+
+        .tarif__element {
+            max-width: 100%;
+            &-header {
+                color: $white;
+                background-color: $orange;
+            }
+        }
+    }
+}
+
+.tarif__pays {
+    margin-top: 95px;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 21px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &-rows {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 75px;
+
+        img {
+            width: 110px;
+        }
+    }
+}

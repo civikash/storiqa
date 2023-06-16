@@ -1,0 +1,26 @@
+{% extends 'app.html' %}
+{% load static %}
+{% block profile %}
+<div class="profile__container">
+    <div class="container">
+        <h1>Личный кабинет родителя</h1>
+        <div class="information__row">
+            <div class="information blue">
+                <h2>Ребенок</h2>
+                <span>Имя: не определено</span>
+                <span>Дата Рождения: не определено</span>
+            </div>
+            <div class="information orange">
+                <h2>Родитель</h2>
+                <span>Имя: не определено</span>
+                <span>Email: {{ request.user.email }}</span>
+            </div>
+            <div class="information green">
+                <h2>Тариф</h2>
+                <span>10 заданий в день Бесплатно</span>
+                <span>Период: До 12.05.2030</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock profile %}

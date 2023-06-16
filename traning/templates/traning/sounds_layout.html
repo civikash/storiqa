@@ -1,0 +1,74 @@
+{% extends 'app.html' %}
+{% load static %}
+{% block practice %}
+<div class="traning__header">
+    <div class="container">
+        <div class="traning__header-selected sounds-bg-1 orange row">
+            <div class="tranin-header-left">
+            <h1>Обучение чтению детей</h1>
+            <div class="traning__header-row">
+                <div class="traning__header-column">
+                    <article>Всего 15 минут занятий в день в течении 3-х месяцев
+                        и ваш ребенок начнет читать</article>
+                    <div class="traning__header-row">
+                        <select class="blue" name="" id="">
+                            <option>Выберите возраст</option>
+                        </select>
+                        <select class="orange" name="" id="">
+                            <option>Выберите возраст</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <img class="memo__book" src="{% static 'img/duck_book.svg' %}" alt="">
+        </div>
+        <div class="traning__header-selected sounds-bg-2 orange voices-bg">
+            <div class="traning__header-alph">
+                <div class="alph__element voices">
+                    <div class="alph__element-letter orange">
+                        <img src="{% static 'img/voices/letter_1.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Изучаем<br> гласные буквы</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter blue">
+                        <img src="{% static 'img/voices/letter_2.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Различаем гласные
+                            и согласные звуки</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter green-light">
+                        <img src="{% static 'img/voices/letter_3.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Твердые и мягкие 
+                            согласные звуки</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter purple">
+                        <img src="{% static 'img/voices/letter_4.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Различаем буквы</span>
+                    </div>
+                </div>
+                <div class="alph__element voices">
+                    <div class="alph__element-letter green">
+                        <img src="{% static 'img/voices/letter_5.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буквенные пазлы</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    {% endblock practice %}

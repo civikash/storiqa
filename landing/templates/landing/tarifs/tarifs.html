@@ -1,0 +1,76 @@
+{% extends 'app.html' %}
+{% load static %}
+{% block tarifs %}
+<div class="tarifs__header">
+    <div class="container">
+        <h1>Учитесь читать без ограничения</h1>
+        <div class="tarifs__header-banner">
+            <img class="tarifs_banner" src="{% static 'img/tarifs_banner.svg' %}" alt="">
+            <div class="banner__column">
+            <h1>Скидка для новых пользователей</h1>
+            <span>-50 %</span>
+        </div>
+        </div>
+        </div>
+</div>
+<div class="tarifs__body">
+    <div class="container">
+        <div class="tarifs__body-row">
+            <div class="tarifs__body-space">
+            <div class="tarif__element">
+                <div class="tarif__element-header">
+                <h1>1 месяц</h1>
+                </div>
+                <div class="tarif__element-body">
+                    <span>Безлимитный доступ ко всем упражнениям и разделам</span>
+                    <span>580 Р</span>
+                    <h1>290 Р</h1>
+                </div>
+            </div>
+            <a href="!#" class="button">Оплатить</a>
+        </div>
+        <div class="tarifs__body-space">
+            <div class="border">
+            <div class="tarif__element">
+                <div class="tarif__element-header">
+                <h1>3 месяца</h1>
+                </div>
+                <div class="tarif__element-body">
+                    <span>Безлимитный доступ ко всем упражнениям и разделам</span>
+                    <span>900 Р</span>
+                    <h1>490 Р</h1>
+                </div>
+            </div>
+        </div>
+            <a href="!#" class="button">Оплатить</a>
+        </div>
+        <div class="tarifs__body-space">
+            <div class="tarif__element">
+                <div class="tarif__element-header">
+                <h1>6 месяцев</h1>
+                </div>
+                <div class="tarif__element-body">
+                    <span>Безлимитный доступ ко всем упражнениям и разделам</span>
+                    <span>1980 Р</span>
+                    <h1>990 Р</h1>
+                </div>
+            </div>
+            <a href="!#" class="button">Оплатить</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="tarif__pays">
+    <div class="container">
+        <h1>Доступные способы оплаты</h1>
+        <div class="tarif__pays-rows">
+            <a href=""><img class="tarifs_banner" src="{% static 'img/pays/Visapays.svg' %}" alt=""></a>
+            <a href=""><img class="tarifs_banner" src="{% static 'img/pays/mastercardpays.svg' %}" alt=""></a>
+            <a href=""><img class="tarifs_banner" src="{% static 'img/pays/ya_pays.svg' %}" alt=""></a>
+            <a href=""><img class="tarifs_banner" src="{% static 'img/pays/qiwipays.svg' %}" alt=""></a>
+            <a href=""><img class="tarifs_banner" src="{% static 'img/pays/PayPalpays.svg' %}" alt=""></a>
+        </div>
+    </div>
+</div>
+{% endblock tarifs %}

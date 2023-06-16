@@ -1,0 +1,91 @@
+{% extends 'app.html' %}
+{% load static %}
+{% block practice %}
+<div class="traning__header">
+    <div class="container">
+        <div class="traning__header-selected blue row">
+            <div class="tranin-header-left">
+            <h1>Алфавит для детей</h1>
+            <div class="traning__header-row">
+                <div class="traning__header-column">
+                    <article>Всего 15 минут занятий в день в течении 3-х месяцев
+                        и ваш ребенок начнет читать</article>
+                    <div class="traning__header-row">
+                        <select class="blue" name="" id="">
+                            <option>Выберите возраст</option>
+                        </select>
+                        <select class="orange" name="" id="">
+                            <option>Выберите возраст</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <img class="memo__book" src="{% static 'img/duck_book.svg' %}" alt="">
+        </div>
+        <div class="traning__header-selected blue alph-bg">
+            <div class="traning__header-alph">
+                <div class="alph__element">
+                    <div class="alph__element-letter blue">
+                        <h1>A</h1>
+                        <img src="{% static 'img/a.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква А</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter green">
+                        <h1>Б</h1>
+                        <img src="{% static 'img/b.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква Б</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter orange-3">
+                        <h1>В</h1>
+                        <img src="{% static 'img/v.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква В</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter blue-2">
+                        <h1>Г</h1>
+                        <img src="{% static 'img/g.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква Г</span>
+                    </div>
+                </div>
+                <div class="alph__element">
+                    <div class="alph__element-letter red">
+                        <h1>Д</h1>
+                        <img src="{% static 'img/d.svg' %}">
+                    </div>
+                    <div class="letter__name">
+                        <span>Буква Д</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="traning__header-selected blue-2 quest-bg">
+            <div class="traning-header-left">
+            <h1>С чего начать изучение алфавита?</h1>
+            <div class="traning__header-row information">
+                <div class="training__header-column">
+                    <article>Чтение - это один из самых важных навыков, которые человек может 
+                        освоить в жизни. Оно дает нам возможность учиться, общаться, 
+                        познавать мир и наслаждаться книгами. Но чтобы научиться читать, нужно потратить время и усилия на тренировку. <br><br>Эти навыки пригодятся во многих сферах жизни, начиная от учебы и 
+                        заканчивая работой. Именно поэтому так важно научить детей читать с раннего возраста и помочь им развивать этот навык на протяжении всей жизни.</article>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'img/duck_2.svg' %}" alt="">
+        </div>
+    </div>
+</div>
+{% endblock practice %}

@@ -1,0 +1,22 @@
+{% load static %}
+<div class="header__container">
+    <div class="container">
+        <div class="header__container-row">
+            <div class="header__container-left">
+                <div class="header__container-title">
+                    <h1>Научись читать вместе <br> с Мемо за 15 минут в день<br> за 2 месяца</h1>
+
+                    <article>Подходит для детей от 3-х лет<br>
+                        Игры, интерактинвые задания.<br>
+                        Все задания озвучены.
+                    </article>
+
+                    <a class="button orange" href="{% url 'traning:traning' %}">Начать заниматься</a>
+                </div>
+            </div>
+            <div class="header__container-right">
+                <img src="{% static 'img/duck_main.svg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
