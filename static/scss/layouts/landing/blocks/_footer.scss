@@ -36,8 +36,8 @@ footer {
         h1 {
             font-weight: bold;
             font-size: 20px;
-            margin-bottom: 25px;
             color: $white;
+            height: 70px;
         }
 
         a {
@@ -50,6 +50,12 @@ footer {
 
         .column {
             display: flex;
+        }
+
+        &-link {
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
         }
     }
 }
