@@ -100,7 +100,7 @@
                         .navbar-menu {
                             li {
                                 a {
-                                    font-size: 13px;
+                                    font-size: 16px;
                                 }
                             }
                         }
@@ -460,7 +460,7 @@
 
                 .line {
                     display: block;
-                    height: 3px;
+                    height: 2px;
                     width: 100%;
                     border-radius: 3px;
                     background: $gray;
@@ -493,7 +493,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 9px;
-                background-color: $gray;
+                background-color: $green-2;
                 padding: 20px;
                 z-index: 9999999999 !important;
 
@@ -501,7 +501,7 @@
 
                     a {
                         font-size: 15px !important;
-                        color: $dark !important;
+                        color: $white !important;
                     }
                 }
             }
@@ -559,7 +559,7 @@
                 }
 
                 .button {
-                    margin-top: 29px !important;
+                    margin-top: 10px !important;
                     width: 90%;
                     font-size: 18px;
                     height: 58px;

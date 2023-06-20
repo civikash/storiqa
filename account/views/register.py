@@ -23,14 +23,7 @@ class RegisterView(View):
         if Account.objects.filter(email=email).exists():
             messages.error(request, 'Пожалуйста, проверьте правильность пароля и Email')
             return render(request, self.template_name)
-
-        # Проверка на сложность пароля
-        try:
-            validate_password(password1)
-        except ValidationError as e:
-            messages.error(request, e.messages[0])
-            return render(request, self.template_name)
-      
+     
 
         # Создание аккаунта
         user = Account.objects.create_account(email=email, password=password1)
