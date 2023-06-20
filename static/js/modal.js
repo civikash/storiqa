@@ -7,22 +7,22 @@ var btn_registration = document.getElementById("registrationModalOpen");
 var closeBtn = document.getElementsByClassName("close")[0];
 
 // При нажатии на кнопку "Открыть модальное окно" отображаем модальное окно
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
-btn_login.onclick = function() {
-    loginModal.style.display = "block";
-    modal.style.display = "none";
+btn_login.onclick = function () {
+  loginModal.style.display = "block";
+  modal.style.display = "none";
 }
 
-btn_registration.onclick = function() {
-    modal.style.display = "block";
-    loginModal.style.display = "none";
+btn_registration.onclick = function () {
+  modal.style.display = "block";
+  loginModal.style.display = "none";
 }
 
 // При нажатии на "крестик" закрываем модальное окно
-closeBtn.onclick = function() {
+closeBtn.onclick = function () {
   modal.style.display = "none";
   loginModal.style.display = "none";
 }
@@ -30,12 +30,12 @@ closeBtn.onclick = function() {
 
 
 // При клике вне модального окна закрываем его
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 
   if (event.target == loginModal) {
     loginModal.style.display = "none";
-}
+  }
 }
