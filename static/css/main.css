@@ -545,6 +545,9 @@ footer {
     font-size: 19px;
     margin-left: 79px;
   }
+  .landing__base .modal .modal-content .modal__header img {
+    display: none;
+  }
   .landing__base .modal .modal__body {
     padding: 25px;
   }
@@ -599,18 +602,19 @@ footer {
   }
   .landing__base .navbar .hamburger-lines {
     display: block;
-    height: 24px;
+    height: 34px;
     width: 38px;
-    top: -10px;
+    top: -13px;
     left: 12px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 5px;
+    justify-content: space-evenly;
   }
   .landing__base .navbar .hamburger-lines .line {
     display: block;
-    height: 2px;
+    height: 3px;
     width: 100%;
     border-radius: 3px;
     background: #C6C6C6;
@@ -632,7 +636,7 @@ footer {
     top: 55px;
     padding: 15px !important;
     border-radius: 11px;
-    right: 21px;
+    right: 13px;
     width: 45%;
     height: -moz-fit-content;
     height: fit-content;
@@ -1198,6 +1202,13 @@ nav .navbar .navbar-menu li a {
 }
 nav .navbar input[type=checkbox]:checked ~ .navbar-menu {
   display: block;
+}
+nav .navbar input[type=checkbox]:checked ~ .hamburger-lines {
+  background-color: #C6C6C6;
+  padding: 3px;
+}
+nav .navbar input[type=checkbox]:checked ~ .hamburger-lines .line {
+  background: #ffffff;
 }
 
 .profile__container {

@@ -30,7 +30,7 @@ nav {
   }
 
   a {
-    
+
     img {
       width: 418px;
     }
@@ -117,6 +117,15 @@ nav {
 
     input[type="checkbox"]:checked~.navbar-menu {
       display: block;
+    }
+
+    input[type="checkbox"]:checked~.hamburger-lines {
+      background-color: $gray;
+      padding: 3px;
+
+      .line {
+        background: $white;
+      }
     }
   }
 }

@@ -361,6 +361,10 @@
                         font-size: 19px;
                         margin-left: 79px;
                     }
+
+                    img {
+                        display: none;
+                    }
                 }
             }
 
@@ -443,18 +447,19 @@
 
             .hamburger-lines {
                 display: block;
-                height: 24px;
+                height: 34px;
                 width: 38px;
-                top: -10px;
+                top: -13px;
                 left: 12px;
                 position: absolute;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                gap: 5px;
+                justify-content: space-evenly;
 
                 .line {
                     display: block;
-                    height: 2px;
+                    height: 3px;
                     width: 100%;
                     border-radius: 3px;
                     background: $gray;
@@ -481,7 +486,7 @@
                 top: 55px;
                 padding: 15px !important;
                 border-radius: 11px;
-                right: 21px;
+                right: 13px;
                 width: 45%;
                 height: fit-content;
                 flex-direction: column;
