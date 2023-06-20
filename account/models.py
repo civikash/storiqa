@@ -1,5 +1,8 @@
 from django.db import models
+from django.conf import settings
 import uuid
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 from django.contrib.auth.models import AbstractUser, Permission, Group
 from django.utils.translation import gettext_lazy as _
 from account.managers import AccountManager
@@ -67,3 +70,16 @@ class Transaction(models.Model):
     user = models.ForeignKey(Account, on_delete=models.CASCADE)
     amount = models.IntegerField()
     timestamp = models.DateTimeField(auto_now_add=True)
+
+
+class AccountInformation(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
+    email_confirmed = models.BooleanField(default=False)
+
+
+
+@receiver(post_save, sender=settings.AUTH_USER_MODEL)
+def update_user_profile(sender, instance, created, **kwargs):
+    if created:
+        AccountInformation.objects.create(user=instance)
+    instance.accountinformation.save()

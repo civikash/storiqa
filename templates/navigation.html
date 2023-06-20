@@ -36,6 +36,8 @@
         </button>
         {% endif %}
       </nav>
+      <form method="POST" action="{% url 'account:register' %}">
+        {% csrf_token %}
     <div id="registrationModal" class="modal">
         <div class="modal-content">
             <div class="modal__header">
@@ -51,7 +53,13 @@
                     </label>
                     <input type="email" name="email" id="emailInput" placeholder="email@gmail.com">
                 </div>
+                <div class="input__space">
+                    <label for="passwordInput">Пароль
+                    </label>
+                    <input type="password" name="password" id="passwordInput" placeholder="Пароль">
+                </div>
                 <button class="button orange" type="submit">Зарегистрироваться</button>
+            </form>
                 <div class="social__row">
                     <div class="social__object blue">
                         <img src="{% static 'img/social/vk.svg' %}">
