@@ -582,7 +582,7 @@ footer {
   .landing__base nav .profile__circle {
     display: flex;
     order: 2 !important;
-    margin-left: 7px !important;
+    margin-left: 12px !important;
     width: 34px !important;
     height: 34px !important;
   }
